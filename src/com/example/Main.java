@@ -11,7 +11,7 @@ public class Main {
         Product producto2 = new Product("Pan", 0.90, 0012445);
         Product producto3 = new Product("Azucar", 1.55, 000123);
         Product producto4 = new Product("Leche", 1.02, 00234);
-        Product producto5 = new Product("Galletas", 3.32, 00034);
+        Product producto5 = new Product("Galletaas", 3.32, 00034);
 
         Product[] cesta = {producto1, producto2, producto3, producto4, producto5};
 
