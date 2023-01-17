@@ -15,14 +15,14 @@ public class Main {
 
         Product[] cesta = {producto1, producto2, producto3, producto4, producto5};
 
-        double result = Product.calculateTotalPrice(cesta);
+        double result = ProductStats.calculateTotalPrice(cesta);
         System.out.println("El precio total de su compra es: " + result);
 
-        double mediaPrices = Product.calculateMediaPrices(cesta);
+        double mediaPrices = ProductStats.calculateMediaPrices(cesta);
         System.out.println("La media de precios es: " + mediaPrices);
 
 
-        double maxProductPrice = Product.calculaMaxPrice(cesta);
+        double maxProductPrice = ProductStats.calculaMaxPrice(cesta);
         System.out.println("El precio máximo es: " + maxProductPrice);
 
 
