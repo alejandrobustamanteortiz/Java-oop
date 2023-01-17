@@ -9,10 +9,11 @@ public class Product {
     private double price;
     private int productId;
 
-    public Product(){
+    public Product() {
 
     }
-    public Product(String productName, double price, int productId){
+
+    public Product(String productName, double price, int productId) {
         this.productName = productName;
         this.price = price;
         this.productId = productId;
@@ -44,30 +45,28 @@ public class Product {
     }
 
 
-    public static double calculateTotalPrice(Product[] cesta){
+    public static double calculateTotalPrice(Product[] cesta) {
 
         double totalPrice = 0.0;
 
         for (Product product : cesta) {
-            totalPrice = totalPrice + product.getPrice();
+            totalPrice += product.getPrice();
         }
         return totalPrice;
     }
 
-    public static double  calculateMediaPrices(Product[] cesta){
-
+    public static double calculateMediaPrices(Product[] cesta) {
         return calculateTotalPrice(cesta) / cesta.length;
     }
 
-    public static double calculaMaxPrice (Product[]cesta){
+    public static double calculaMaxPrice(Product[] cesta) {
 
         double maxPrice = 0.0;
 
-        for (int i = 0; i<cesta.length; i++) {
+        for (Product product : cesta) {
+            if (product.getPrice() > maxPrice)
+                maxPrice = product.getPrice();
 
-            if( cesta[i].getPrice() > maxPrice) {
-                maxPrice = cesta[i].getPrice();
-            }
         }
         return maxPrice;
     }
