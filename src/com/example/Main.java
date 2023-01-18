@@ -21,13 +21,11 @@ public class Main {
         double mediaPrices = ProductStats.calculateMediaPrices(cesta);
         System.out.println("La media de precios es: " + mediaPrices);
 
-
         double maxProductPrice = ProductStats.calculaMaxPrice(cesta);
         System.out.println("El precio máximo es: " + maxProductPrice);
 
         double minProductPrice = ProductStats.calculateMinPrice(cesta);
         System.out.println("El precio minimo es: " + minProductPrice);
     }
-
 }
 
