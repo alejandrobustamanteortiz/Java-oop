@@ -1,3 +1,5 @@
+package com.example;
+
 public class Manufacturer {
 
    private String nameManufacturer;
