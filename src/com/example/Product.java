@@ -19,7 +19,6 @@ public class Product {
         this.productId = productId;
     }
 
-
     public String getProductName() {
         return productName;
     }
