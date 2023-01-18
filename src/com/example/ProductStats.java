@@ -23,7 +23,6 @@ public class ProductStats {
         for (Product product : cesta) {
             if (product.getPrice() > maxPrice)
                 maxPrice = product.getPrice();
-
         }
         return maxPrice;
     }
