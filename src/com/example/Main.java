@@ -16,7 +16,7 @@ public class Main {
         Product[] cesta = {producto1, producto2, producto3, producto4, producto5};
 
         double result = ProductStats.calculateTotalPrice(cesta);
-        System.out.println("El precio total de su compra ess: " + result);
+        System.out.println("El precio total de su compra es: " + result);
 
         double mediaPrices = ProductStats.calculateMediaPrices(cesta);
         System.out.println("La media de precios es: " + mediaPrices);
