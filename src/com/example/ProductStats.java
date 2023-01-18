@@ -28,4 +28,15 @@ public class ProductStats {
         return maxPrice;
     }
 
+    public static double calculateMinPrice(Product[] cesta) {
+
+        double minPrice = cesta[0].getPrice();
+
+        for (Product product : cesta) {
+            if (product.getPrice() < minPrice) {
+                minPrice = product.getPrice();
+            }
+        }
+        return minPrice;
+    }
 }
